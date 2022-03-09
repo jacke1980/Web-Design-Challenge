@@ -16,20 +16,21 @@
             <li> <a href="#">Plots<i class="fa fa-caret-down"></i></a>
                 <div class="sub-menu">
                     <ul>
-                     <li> <a href="http://"> Max Temperature</a></li>
-                     <li> <a href="http://"> Humidity</a></li>
-                    <li> <a href="http://">Cloudiness</a></li>
-                    <li> <a href="http://">Wind Speed</a></li> 
+                     <li> <a href="#Max-Temp"> Max Temperature</a></li>
+                     <li> <a href="#Humidity"> Humidity</a></li>
+                    <li> <a href="#cloudiness">Cloudiness</a></li>
+                    <li> <a href="#wind-speed">Wind Speed</a></li> 
         
                     </ul>
-                    </div>
+                </div>
             </li>
             
-            <li><a href="#">Comparison</a></li>
-            <li><a href="#">Data</a></li>
+            <li><a href="#visualization">Comparison</a></li>
+            <li><a href="#data">Data</a></li>
             
         </ul>
     </div>
+   
 </nav>
 <section class="landing-page ">
 <article class="summary container">
@@ -55,16 +56,16 @@
     Visualizations
     </h1>
     <div class="image-grid">
-    <a href="default.asp">     
+    <a href="#Max-Temp">     
     <img class="Fig1" alt=""src="Resources/assets_img/images/Fig1.png" alt="Latitude vs temperature">
     </a>
-    <a href="default.asp">
+    <a href="#Humidity">
     <img class="Fig2" src="Resources/assets_img/images/Fig2.png" alt="Latitude vs Humidity">
     </a>
-    <a href="default.asp"> 
+    <a href="#cloudiness"> 
     <img class="Fig3" src="Resources/assets_img/images/Fig3.png" alt="Latitude vs cloudiness">
     </a>
-    <a href="default.asp"> 
+    <a href="#wind-speed"> 
     <img class="Fig4" src="Resources/assets_img/images/Fig4.png" alt="Latitude vs wind Speed">
     </a>
     </div> 
@@ -72,7 +73,7 @@
 </article>
 </section>
 
-    <article class="visualization-page">
+ <article id="visualization" class="visualization-page">
         <div>
         <h1>
             visualizations
@@ -80,17 +81,17 @@
        </div>
         <div class="visualization-div">
         <img class="Fig1" src="Resources/assets_img/images/Fig1.png" alt="Latitude vs temperature">
-        <img class="Fig2" src="Resources/assets_img/images/Fig1.png" alt="Latitude vs Humidity">
-        <img class="Fig3" src="Resources/assets_img/images/Fig1.png" alt="Latitude vs cloudiness">
-        <img class="Fig4" src="Resources/assets_img/images/Fig1.png" alt="Latitude vs wind Speed">
+        <img class="Fig2" src="Resources/assets_img/images/Fig2.png" alt="Latitude vs Humidity">
+        <img class="Fig3" src="Resources/assets_img/images/Fig3.png" alt="Latitude vs cloudiness">
+        <img class="Fig4" src="Resources/assets_img/images/Fig4.png" alt="Latitude vs wind Speed">
     </div>
-    </article>
-    <section class="comparison-page">
+</article>
+<section class="comparison-page">
         
 
 <div class="comparison cloudiness">
     <h1 class="h1">Cloudiness</h1>
-<div class="img">
+<div id="cloudiness" class="img">
  <img class="Fig3" src="Resources/assets_img/images/Fig3.png" alt="Latitude vs cloudiness">
 <p>The higher amount of marine surface compared to the northern hemisphere 
     cause more sea salt particles to be injected in the atmosphere.
@@ -100,7 +101,7 @@
     This increase the emissions of marine aerosols.. </p>
 </div>
 </div>
-<div class="comparison wind-speed">
+<div id="wind-speed" class="comparison wind-speed">
     <h1 class="h1">Wind Speed</h1>
 <div class="img">
  <img class="Fig4" src="Resources/assets_img/images/Fig4.png" alt="Latitude vs wind speed">
@@ -110,7 +111,7 @@
     North and South Poles. </p>
 </div>
 </div>
-<div class="comparison Humidity">
+<div id="Humidity" class="comparison Humidity">
     <h1 class="h1">Humidity</h1>
 <div class="img">
  <img class="Fig2" src="Resources/assets_img/images/Fig2.png" alt="Latitude vs Humidity">
@@ -120,7 +121,7 @@
     Average annual humidity is around 75%. </p>
 </div>
 </div>
-<div class="comparison Max-Temp">
+<div id="Max-Temp" class="comparison Max-Temp">
     <h1 class="h1">Max Temperature</h1>
 <div class="img">
  <img class="Fig1" src="Resources/assets_img/images/Fig1.png" alt="Latitude vs temperature">
@@ -131,11 +132,221 @@
     the northern summer. </p>
 </div>
 </div>
-    </section>
+</section>
    
-    <section class="data-page">
+ <section id="data" class="data-page">
+<h1 class="h1">Data Table</h1>
+<p>The following Table includes data obtained from
+    OpenWeatherMap,  only includes 15 datasets out of 500 
+    that we used to plot our data
+    graphic for analysis.
+</p>
+<div class="data-container">
+<table class="content-table">
+<thead>
+<tr>
+    <th>City_ID</th>
+    <th>City</th>
+    <th>Country</th>
+    <th>Lat</th>
+    <th>Long</th>
+    <th>Max Temp</th>
+    <th>Humidity</th>
+    <th>Clouds</th>
+    <th>Wind Speed</th>  
+    <th>Date</th>
+</tr>
+</thead>  
+<tbody>
+<tr>
+    <td>0</td>
+    <td>Qaanaaq</td>
+    <td>GL</td>
+    <td>77.48</td>
+    <td>-69.36</td>
+    <td>-8.23</td>
+    <td>95</td>
+    <td>100</td>
+    <td>6.8</td>
+    <td>1644330335</td>
 
-    </section>
+</tr>
+<tr>
+    <td>1</td>
+    <td>Srednekolymsk</td>
+    <td>RU</td>
+    <td>67.45</td>
+    <td>153.68</td>
+    <td>-42.4</td>
+    <td>95</td>
+    <td>100</td>
+    <td>6.8</td>
+    <td>1644330335</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Mumfordq</td>
+    <td>GH</td>
+    <td>7.48</td>
+    <td>-0.36</td>
+    <td>83.23</td>
+    <td>71</td>
+    <td>97</td>
+    <td>13.8</td>
+    <td>1644330335</td>
+
+</tr>
+<tr>
+    <td>3</td>
+    <td>Atuona</td>
+    <td>PF</td>
+    <td>-9.48</td>
+    <td>-139.36</td>
+    <td>77.23</td>
+    <td>76</td>
+    <td>6</td>
+    <td>17.8</td>
+    <td>1644330335</td>
+
+</tr>
+<tr>
+    <td>4</td>
+    <td>Khatanga</td>
+    <td>MY</td>
+    <td>71.48</td>
+    <td>102.36</td>
+    <td>0.9</td>
+    <td>82</td>
+    <td>100</td>
+    <td>17.8</td>
+    <td>1644330335</td>
+
+</tr>
+<tr>
+    <td>5</td>
+    <td>George town</td>
+    <td>MY</td>
+    <td>5.48</td>
+    <td>100.36</td>
+    <td>78.9</td>
+    <td>89</td>
+    <td>20</td>
+    <td>0.0</td>
+    <td>1644329651</td>
+    
+</tr>
+<tr>
+    <td>6</td>
+    <td>Longyearbyen</td>
+    <td>SJ</td>
+    <td>42.21</td>
+    <td>-73.64</td>
+    <td>35.9</td>
+    <td>83</td>
+    <td>87</td>
+    <td>3.0</td>
+    <td>1644330086</td>
+</tr>
+<tr>
+    <td>7</td>
+    <td>Albany</td>
+    <td>US</td>
+    <td>42.21</td>
+    <td>-73.64</td>
+    <td>35.9</td>
+    <td>16</td>
+    <td>87</td>
+    <td>3.0</td>
+    <td>1644330086</td>
+</tr>
+<tr>
+    <td>8</td>
+    <td>Kruisfontein</td>
+    <td>ZA</td>
+    <td>42.21</td>
+    <td>-73.64</td>
+    <td>35.9</td>
+    <td>83</td>
+    <td>36</td>
+    <td>3.0</td>
+    <td>1644330337</td>
+</tr>
+<tr>
+    <td>9</td>
+    <td>Coquimbo</td>
+    <td>CL</td>
+    <td>-29.21</td>
+    <td>-73.64</td>
+    <td>35.9</td>
+    <td>83</td>
+    <td>87</td>
+    <td>8.0</td>
+    <td>1644330337</td>
+</tr>
+<tr>
+    <td>10</td>
+    <td>Kapaa</td>
+    <td>US</td>
+    <td>29.21</td>
+    <td>-153.64</td>
+    <td>75.9</td>
+    <td>40</td>
+    <td>87</td>
+    <td>3.0</td>
+    <td>1644330337</td>
+</tr>
+<tr>
+    <td>11</td>
+    <td>Malbork</td>
+    <td>PL</td>
+    <td>54.21</td>
+    <td>19.64</td>
+    <td>43.9</td>
+    <td>83</td>
+    <td>87</td>
+    <td>19.0</td>
+    <td>1644330338</td>
+</tr>
+<tr>
+    <td>12</td>
+    <td>Tiznit Province</td>
+    <td>MA</td>
+    <td>29.21</td>
+    <td>-9.64</td>
+    <td>75.9</td>
+    <td>16</td>
+    <td>100</td>
+    <td>19.0</td>
+    <td>1644330338</td>
+</tr>
+<tr>
+    <td>13</td>
+    <td>Buraidah</td>
+    <td>SA</td>
+    <td>29.21</td>
+    <td>43.64</td>
+    <td>75.9</td>
+    <td>23</td>
+    <td>0</td>
+    <td>19.0</td>
+    <td>1644330339</td>
+</tr>
+<tr>
+    <td>14</td>
+    <td>Cape Town</td>
+    <td>ZA</td>
+    <td>-29.21</td>
+    <td>13.64</td>
+    <td>75.9</td>
+    <td>43</td>
+    <td>0</td>
+    <td>9.0</td>
+    <td>1644330339</td>
+</tr>
+</tbody> 
+</table>
+</div>
+ </section>
 
 
 
