@@ -1,10 +1,11 @@
+/*set color variables*/
 :root {
   --primary-color: #eef2f4;
   --color-white: #fff;
   --color-white-ext: rgb(241, 234, 234);
   --color-black-ext: #212b50;
 }
-
+/*set margin and box sizing*/
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +25,7 @@ h1 {
   text-align: center;
   padding: 1rem 0;
 }
+/*build our navigation bar*/
 .navbar {
   padding: 0;
 }
@@ -83,7 +85,7 @@ h1 {
 .sub-menu {
   display: none;
 }
-
+/*styling our main page*/
 .container {
   margin: 1rem;
   padding: 0 2rem;
@@ -130,12 +132,12 @@ h1 {
 }
 .container p {
   margin: 2rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .comparison p,
 .data-page p {
   padding: 1rem 1rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .data-page .h1{
 font-size: 1.5rem;
@@ -151,6 +153,7 @@ text-align: center;
 .img {
   margin: 0.5rem;
 }
+/*constr our data table*/
 .data-container {
   display: flex;
   justify-content: center;
@@ -164,7 +167,7 @@ text-align: center;
   min-width: 100px;
   border-radius: 2px 2px 0 0;
   overflow: hidden;
-  box-shadow: 0 0 20px var(--color-black-ext);
+  box-shadow: 0 0 10px var(--color-black-ext);
 }
 thead tr {
   font-weight: bold;
@@ -175,6 +178,7 @@ thead tr {
 .content-table th,
 .content-table td {
   padding: 0.1rem;
+  padding-bottom: 0.3rem;
 }
 .content-table tbody tr {
   border-bottom: 1px solid var(--color-white-ext);
@@ -185,7 +189,8 @@ thead tr {
 .content-table tbody tr:last-of-type {
   border-bottom: 2px solid #009879;
 }
-
+/*adjust website for screens larger than 678px*/
+/*our code before this will be for screens smaller than 678px*/
 @media (min-width: 678px) {
   h1 {
     font-size: 1.5rem;
@@ -283,7 +288,7 @@ thead tr {
   .comparison .Fig2,
   .comparison .Fig3,
   .comparison .Fig4{
-    width: 100%;
+    width: 600px;
     margin-right: 0;
   }
   .img .Fig1, .img .Fig2,
