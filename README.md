@@ -16,4 +16,4 @@ Data is more powerful when we share it with others! Let's take HTML and CSS to c
  ![data-sm](https://user-images.githubusercontent.com/85952426/159527931-e1c8e79b-53d3-4e9f-a418-076a2dc2a72e.png)
 
 ## Please Visit
-(https://jacke1980.github.io.com/)
+https://jacke1980.github.io./
